@@ -9,7 +9,7 @@ import {
   Input,
   SearchBtn,
   SerchFormBtnLabel,
-} from './SearchBar.styled';
+} from './SerchBar.styled';
 export default class SearhBar extends Component {
   state = {
     searchQuery: '',

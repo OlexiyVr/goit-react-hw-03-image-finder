@@ -1,5 +1,5 @@
-import { Component } from 'react';
-import { createPortal } from 'react-dom';
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import { ModalOverlay, ModalContainer } from './Modal.styled';
 
@@ -31,10 +31,11 @@ export default class Modal extends Component {
       this.props.onClose();
     }
   };
+
   render() {
     const { selectedImage, tags } = this.props;
 
-    return createPortal(
+    return ReactDOM.createPortal(
       <ModalOverlay onClick={this.handleBackdropClick}>
         <ModalContainer>
           <img src={selectedImage} alt={tags} />

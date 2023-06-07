@@ -10,7 +10,7 @@ export const LoadMoreBtn = styled.button`
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 15px;
-  color: #fff;
+  color: #fffc00;
   border: 0;
   text-decoration: none;
   cursor: pointer;
@@ -25,5 +25,6 @@ export const LoadMoreBtn = styled.button`
   :hover,
   :focus {
     background-color: #303f9f;
+    box-shadow: 0px 0px 12px 0px rgba(234,255,0,0.54);
   }
 `;
